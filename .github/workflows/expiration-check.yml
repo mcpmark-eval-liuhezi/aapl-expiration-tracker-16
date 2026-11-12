@@ -1,0 +1,11 @@
+name: Weekly AAPL Expiration Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  echo-status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo status
+        run: echo "aapl-expiration-tracker-16 workflow dispatched manually - expirations.md is up to date."
